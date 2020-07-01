@@ -1,0 +1,22 @@
+<!-- INíCIO do CONTEÚDO -->
+<section class="content-header">
+    <h1>
+      Todas as máscaras
+    </h1>
+</section>
+
+<section class="content">
+
+<div class="row">
+
+    <div class="col-md-9 col-xs-12">
+        <mk-product *ngFor="let product of products | async" [product]="product" (add)="cartList.addItem($event)"></mk-product>
+    </div>
+    <div class="col-md-3 col-xs-12">
+        <mk-cart #cartList></mk-cart>
+    </div>
+    
+</div>
+
+</section>
+<!-- FIM  do CONTEÚDO -->

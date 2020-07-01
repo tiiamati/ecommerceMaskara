@@ -1,0 +1,15 @@
+<div class="menu-item-info-box">
+    <div class="menu-item-info-box">
+      <span class="menu-item-info-box-icon"><img [src]="product.image" /></span>
+  
+      <div class="menu-item-info-box-content">
+        <span class="menu-item-info-box-text">{{product.name}}</span>
+        <span class="menu-item-info-box-star"></span>
+        <span class="menu-item-info-box-detail">{{product.description}}</span>
+        <span class="menu-item-info-box-detail"><b>Estoque:</b> {{product.stock}}</span>
+        <span class="menu-item-info-box-price">{{product.value | currency: 'BRL': true}}</span>
+        <a (click)="emitAddEvent()" class=""><i class="fa fa-plus-circle"></i> Adicionar</a>
+      </div>
+    </div>
+</div>
+  

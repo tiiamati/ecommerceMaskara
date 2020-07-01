@@ -24,9 +24,18 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/font-awesome/css/font-awesome.min.css",
+              "node_modules/admin-lte/bootstrap/css/bootstrap.min.css",
+              "node_modules/admin-lte/dist/css/AdminLTE.min.css",
+              "node_modules/admin-lte/dist/css/skins/skin-red.min.css",
+              "node_modules/admin-lte/plugins/iCheck/flat/red.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/jquery/dist/jquery.min.js",
+              "node_modules/admin-lte/bootstrap/js/bootstrap.min.js",
+              "node_modules/admin-lte/dist/js/app.min.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -119,6 +128,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "ecommerce"
+    }
+  },
+  "defaultProject": "ecommerce",
+  "cli": {
+    "analytics": "6b46962e-6b9e-4bb7-807c-23d38d704d08"
+  }
 }
