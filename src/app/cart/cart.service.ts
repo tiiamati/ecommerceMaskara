@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
 import { ProductRequest } from '../products/product/product-request.model';
 import { CartRequest } from './cart-request.model';
 
-const URL = 'http://localhost:8089/ecommerce/cart';
+const URL = 'https://ecommerce-mask.herokuapp.com/ecommerce/cart';
 
 @Injectable({ providedIn: 'root' })
 export class CartService {

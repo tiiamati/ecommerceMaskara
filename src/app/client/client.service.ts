@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 import { ProductRequest } from '../products/product/product-request.model';
 import { Client } from './client.model';
 
-const URL = 'http://localhost:8089/ecommerce/clients/login';
+const URL = 'https://ecommerce-mask.herokuapp.com/ecommerce/clients/login';
 
 @Injectable({ providedIn: 'root' })
 export class ClientService {
