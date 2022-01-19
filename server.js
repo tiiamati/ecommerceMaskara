@@ -1,10 +1,13 @@
-const express = require('express');
-const path = require('path');
+const express = require("express");
+
 const app = express();
 
-app.get('*', function (req, res) {
-    const index = path.join(__dirname, './', 'index.html');
-    res.sendFile(index);
-  });
+app.use(express.static("./dist/ecommerceMaskara/src"));
+
+app.get("/*", function (req, res) {
+  res.sendFile("index.html", { root: "dist/ecommerceMaskara/src" });
+});
 
 app.listen(process.env.PORT || 8080);
+
+console.log(`Running on port ${process.env.PORT || 8080}`);
